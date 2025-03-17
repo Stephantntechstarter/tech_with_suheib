@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Studio Code Einstellungen</title>
+  <link rel="stylesheet" href="../css/body.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/settings-instructions.css">
+  <link rel="stylesheet" href="../css/copy-button.css">
+  <link rel="stylesheet" href="../css/code-block.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Visual Studio Code Einstellungen</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="shortcuts.html">Shortcuts</a></li>
+        <li><a href="settings.html">Einstellungen</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Hilfreiche Einstellungen</h2>
+      <div class="extension-notice">
+        <div class="notice-icon">ℹ️</div>
+        <div>
+          <p>Für diese Einstellungen benötigst du folgende Erweiterungen:</p>
+          <p class="install-hint">
+            Installiere sie in VS Code über
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>
+            → Suche nach dem Namen.
+          </p>
+          <ul class="extension-list">
+            <li>
+              <a href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark" target="_blank">
+                Atom One Dark Theme
+              </a>
+            </li>
+            <li>
+              <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">
+                Material Icon Theme
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="settings-instructions">
+        <p>So fügst du die Einstellungen in VS Code ein:</p>
+        <ol class="steps">
+          <li>
+            Öffne die Command Palette mit
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+          </li>
+          <li>Gib "user" ein und wähle <em>"Open User Settings (JSON)"</em></li>
+          <li>Füge den kopierten Code in die <code>settings.json</code> ein</li>
+          <li>Speichere die Datei (<kbd>Ctrl</kbd> + <kbd>S</kbd>)</li>
+        </ol>
+      </div>
+      <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">Kopieren</button>
+        <pre class="code-block"><code class="language-json">
+        {
+          // Arbeitsoberfläche (Workbench)
+          "workbench.colorTheme": "Atom One Dark",         // Theme für Editor und UI (Farbschema)
+          "workbench.iconTheme": "material-icon-theme",    // Visuelle Icons für Dateitypen im Explorer
+          "workbench.startupEditor": "none",               // Beim Start keinen Editor öffnen (leeres Fenster)
+          "workbench.tree.indent": 20,                     // Einrückung in Baumansichten (z.B. Explorer)
+
+          // Editor
+          "editor.fontSize": 20,                           // Schriftgröße im Editor
+          "editor.minimap.enabled": false,                 // Miniaturansicht (Minimap) rechts deaktivieren
+          "editor.stickyScroll.enabled": false,            // "Klebende" Code-Überschriften deaktivieren
+          "editor.guides.bracketPairs": "active",          // Fügt Visuelle Linien bei verschachtelten Klammern hinzu
+          "editor.guides.bracketPairsHorizontal": "active",// Horizontale Linien bei Klammern (zusätzlich zu vertikalen)
+          "editor.tabSize": 2,                             // Tabulatorgröße (Leerzeichen pro Tab)
+
+          // Terminal
+          "terminal.integrated.fontSize": 20,              // Schriftgröße im integrierten Terminal
+
+          // Datei-Management
+          "files.insertFinalNewline": true,                // Fügt am Dateiende automatisch eine Leerzeile ein
+          "files.trimFinalNewlines": true,                 // Entfernt überflüssige Leerzeilen am Dateiende
+          "files.trimTrailingWhitespace": true,            // Automatisch Leerzeichen am Zeilenende entfernen
+
+          // Updates & Benachrichtigungen
+          "update.showReleaseNotes": false                 // Keine Release-Hinweise nach Updates anzeigen
+        }
+        </code></pre>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Visual Studio Code Guide</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-json.min.js"></script>
+  <script src="../js/copy-handler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.extension-notice {
+  background: #e3f2fd;
+  border: 1px solid #007acc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.extension-notice p:first-of-type {
+  margin-bottom: 0.5rem !important;
+}
+
+.install-hint {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 0.95em;
+}
+
+.install-hint kbd {
+  white-space: nowrap;
+}
+
+.extension-list {
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+}
+
+.extension-list li {
+  margin-bottom: 0.5rem;
+}
+
+.extension-list a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extension-list a:hover {
+  text-decoration: underline;
+}
+
+.notice-icon {
+  font-size: 1.5rem;
+  margin-top: 4px;
+}
+
+.settings-instructions {
+  background: #f8f9fa;
+  border: 1px solid #007acc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-instructions p {
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.steps {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.steps li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.steps code {
+  background: #e9ecef;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.steps em {
+  color: #007acc;
+  font-style: normal;
+  font-weight: 500;
+}

@@ -1,0 +1,9 @@
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
