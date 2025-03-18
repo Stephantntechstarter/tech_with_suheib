@@ -34,21 +34,26 @@
 }
 
 @keyframes fadeToast {
+
+  /* Startposition unsichtbar */
   0% {
     opacity: 0;
     bottom: -20px;
   }
 
+  /* Sichtbar in Endposition */
   20% {
     opacity: 1;
     bottom: 20px;
   }
 
+  /* Bleibt sichtbar */
   80% {
     opacity: 1;
     bottom: 20px;
   }
 
+  /* Verschwindet nach unten */
   100% {
     opacity: 0;
     bottom: -20px;
