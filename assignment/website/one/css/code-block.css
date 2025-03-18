@@ -10,8 +10,8 @@
 }
 
 @media (max-width: 768px) {
-  .code-block {
-    font-size: 12px !important;
-    padding: 1rem !important;
+  pre.code-block.language-json {
+    font-size: 12px;
+    padding: 1rem;
   }
 }
