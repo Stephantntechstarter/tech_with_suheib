@@ -8,3 +8,10 @@
   font-size: 14px;
   tab-size: 2px;
 }
+
+@media (max-width: 768px) {
+  .code-block {
+    font-size: 12px !important;
+    padding: 1rem !important;
+  }
+}

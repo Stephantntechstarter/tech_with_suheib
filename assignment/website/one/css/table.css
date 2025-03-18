@@ -27,3 +27,17 @@ tr:nth-child(even) {
   padding: 8px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    /* Horizontales Scrollen ermöglichen */
+    overflow-x: auto;
+    width: 100%;
+    /* Smooth-Scroll auf iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}

@@ -19,3 +19,18 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    /* Volle Breite erzwingen */
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .video-wrapper iframe {
+    /* Videoverhältnis beibehalten */
+    aspect-ratio: 16/9;
+    /* Höhe anpassen */
+    height: auto;
+  }
+}

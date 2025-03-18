@@ -84,3 +84,16 @@
   font-style: normal;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .extension-notice {
+    /* Icon über dem Text */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .notice-icon {
+    margin-bottom: 0.5rem;
+  }
+}
