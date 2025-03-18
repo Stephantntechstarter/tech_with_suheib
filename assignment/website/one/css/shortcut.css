@@ -14,7 +14,7 @@
   align-self: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .content-container {
     flex-direction: column;
   }
