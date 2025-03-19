@@ -1,6 +1,5 @@
 .table-wrapper {
   grid-column: full;
-  /* Nutzt volle Breite des Grids */
   overflow-x: auto;
 }
 

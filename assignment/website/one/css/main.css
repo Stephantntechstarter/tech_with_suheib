@@ -9,7 +9,6 @@ main {
 
 main>* {
   grid-column: main;
-  /* Alle Kinder nutzen die mittlere Spalte */
 }
 
 @media (max-width: 768px) {
