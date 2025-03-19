@@ -1,14 +1,21 @@
 main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(20px, 1fr) [main-start] minmax(300px, 1200px) [main-end] minmax(20px, 1fr) [full-end];
+  gap: 2rem;
+  padding: 2rem 0;
   background-color: #fff;
+}
+
+main>* {
+  grid-column: main;
+  /* Alle Kinder nutzen die mittlere Spalte */
 }
 
 @media (max-width: 768px) {
   main {
-    padding: 1rem;
-    max-width: 100%;
-    margin: 0 10px;
+    grid-template-columns: [full-start] 10px [main-start] 1fr [main-end] 10px [full-end];
+    padding: 1rem 0;
+    gap: 1rem;
   }
 }

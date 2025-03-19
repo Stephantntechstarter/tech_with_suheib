@@ -1,3 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+}
+
+.steps-column {
+  align-self: start;
+}
+
+.code-container {
+  grid-column: 1 / -1;
+}
+
 .extension-notice {
   background: #e3f2fd;
   border: 1px solid #007acc;
@@ -95,5 +109,18 @@
 
   .notice-icon {
     margin-bottom: 0.5rem;
+  }
+
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-column {
+    grid-row: 2;
+  }
+
+  .code-container {
+    grid-row: 3;
   }
 }
