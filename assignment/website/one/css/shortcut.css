@@ -10,7 +10,6 @@
     grid-template-areas:
       "table video"
       "tip tip";
-    /* Tipp spannt beide Spalten */
   }
 
   .table-wrapper {
