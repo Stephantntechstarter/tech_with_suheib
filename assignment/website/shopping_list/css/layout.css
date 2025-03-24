@@ -1,0 +1,25 @@
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.budget-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+li>.display-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

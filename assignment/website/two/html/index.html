@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einkaufsliste</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <h1>Einkaufsliste</h1>
+
+  <div class="input-container">
+    <input type="text" id="artikel" placeholder="Artikelname...">
+    <input type="number" id="anzahl" placeholder="Anzahl...">
+    <input type="number" id="preis" placeholder="Preis pro Stück...">
+    <select id="kategorie">
+      <option value="Lebensmittel">🥩🥦🍞 Lebensmittel</option>
+      <option value="Unterhaltung">🎮 Unterhaltung</option>
+      <option value="Bücher">📚 Bücher</option>
+      <option value="Elektronik">💻 Elektronik</option>
+      <option value="Haushalt">🏠 Haushalt</option>
+    </select>
+    <button id="addButton">Hinzufügen</button>
+    <button id="sortButton">Sortieren</button>
+    <button id="clearListButton">Liste leeren</button>
+    <button id="toggleMode">🌞/🌙</button>
+  </div>
+
+  <div class="budget-container">
+    <input type="number" id="budget" placeholder="Budget festlegen...">
+    <div id="budgetFeedback"></div>
+  </div>
+
+  <ul id="liste"></ul>
+  <h5 id="gesamt"></h5>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
