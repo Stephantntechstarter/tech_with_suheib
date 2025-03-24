@@ -12,7 +12,7 @@ const budgetInput = document.getElementById("budget");
 const budgetFeedback = document.getElementById("budgetFeedback");
 
 const kategorieEmojis = {
-  "Lebensmittel": "🥦",
+  "Lebensmittel": "🥩🥦🍞",
   "Unterhaltung": "🎮",
   "Bücher": "📚",
   "Elektronik": "💻",

@@ -1,5 +1,5 @@
 const kategorieEmojis = {
-  "Lebensmittel": "🥦",
+  "Lebensmittel": "🥩🥦🍞",
   "Unterhaltung": "🎮",
   "Bücher": "📚",
   "Elektronik": "💻",
