@@ -1,25 +1,24 @@
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
 
 const dbPath = path.join(__dirname, "../data/cars.json");
 
-// Daten lesen
-function readData() {
+async function readData() {
   try {
-    const rawData = fs.readFileSync(dbPath, "utf-8");
+    const rawData = await fs.readFile(dbPath, "utf-8");
     return JSON.parse(rawData);
   } catch (error) {
-    console.error("Fehler beim Lesen der Datei:", error);
+    // Bei Fehler leere Datenbank zurückgeben
     return { cars: [] };
   }
 }
 
-// Daten schreiben
-function writeData(data) {
+async function writeData(data) {
   try {
-    fs.writeFileSync(dbPath, JSON.stringify(data, null, 2), "utf-8");
+    await fs.writeFile(dbPath, JSON.stringify(data, null, 2), "utf-8");
   } catch (error) {
-    console.error("Fehler beim Schreiben der Datei:", error);
+    console.error("Fehler beim Schreiben:", error);
+    throw error; // Fehler wird auf höhere Ebene "geworfen" (siehe Error-Handling Middleware (server.js))
   }
 }
 
